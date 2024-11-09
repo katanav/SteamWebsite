@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Registration Page</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <form id="signupForm" onsubmit="redirectToLogin(event)">
+            <img src="steamicon.png">
+            <h2>SIGN UP</h2>
+
+            <div class="input-box">
+            <label for="Enter Firstname">Enter Firstname:</label>
+            <br>
+            <input type="text" id="Enter Firstname" placeholder="Ex. Francis Ivo" required>
+            </div>
+
+            <div class="input-box">
+            <label for="Enter Middlename">Enter Middlename:</label>
+            <br>
+            <input type="text" id="Enter Middlename" placeholder="Ex. Lascamana" required>
+            </div>
+
+            <div class="input-box">
+            <label for="Enter Lastname">Enter Lastname:</label>
+            <br>
+            <input type="text" id="Enter Lastname" placeholder="Ex. Duay" required>
+            </div>
+
+            <label>Select suffix:</label>
+            <select id="Suffix">
+                <option>None</option>
+                <option>Jr</option>
+                <option>Sr</option>
+                <option>I</option>
+                <option>II</option>
+                <option>III</option>
+                <option>IV</option>
+                <option>V</option>
+            </select>
+
+            <div class="input-group">
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Ex. example123@gmail.com" required>
+
+            <br>
+            <label for="bday">Birthday:</label>
+            <input type="date" id="bday" required>
+
+            <p><b>Account Information:</b></p>
+
+            <br>
+            <label for="username">Enter Username:</label>
+            <br>
+            <input type="text" id="username" name="username" placeholder="user" required>
+
+            <br>
+            <label for="password">Enter Password:</label>
+            <br>
+            <input type="password" id="password" name="password" placeholder="pass" required >
+            </div>
+
+            <button type="reset">Cancel</button>
+            <input type="Submit">
+        </form>
+    </div>
+    
+    <script>
+function redirectToLogin(event) {
+    event.preventDefault();
+    window.location.href = 'index.html';
+}
+</script>
+</body>
+</html>
