@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="fontawesome/js/all.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="box">
+        <h2 style="color: white;"><i class="fa-brands fa-steam"></i> LOGIN</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="user" required aria-label="Username">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="pass" required aria-label="Password">
+            </div>
+            <button type="submit">Login</button>
+            <div id="error-message"></div>
+            <p style="color:white; padding: 5px;">Don't have an account? <a href="registration.html" style="color: blue;">Register here.</a> <i class="fa-regular fa-user"></i></p>
+        </form>
+    </div>
+    
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
